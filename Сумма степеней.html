@@ -1,0 +1,27 @@
+<html>
+<h2> Степени </h2> 
+<p> Ответ в алертах </p> 
+<script> 
+function number() {
+for (let i = 1000; i < 10000; i++){ 
+let m4 = parseInt(i % 10); 
+let m1 = parseInt(i / 1000); 
+let m3 = parseInt((i / 10)%10); 
+let m2 = parseInt((i / 100)%10); 
+//document.write(m1 +""+ m2 +""+ m3); 
+//sum2 = ("Сумма пятых степеней числа"+" "+m1+m2+m3+m4+"<br>"); 
+let sum = (Math.pow(m1,5)+Math.pow(m2,5)+Math.pow(m3,5)+Math.pow(m4,5)); 
+document.write("<br>"); 
+let chk_i = (m1+""+m2+""+m3+""+m4); 
+if (i == sum) { 
+//document.write (chk_i + "<br>"); 
+//alert(sum2); 
+//document.write(sum); 
+alert(sum); 
+//document.write(chk_i); 
+} 
+} 
+}
+</script>
+<input type=button onClick="number()" value="Ответ">
+</html>
